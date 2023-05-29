@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grid_list/app_dimmens.dart';
 
 class ItemModel extends StatelessWidget {
   const ItemModel({
@@ -9,9 +10,11 @@ class ItemModel extends StatelessWidget {
   final String title;
 
   @override
-  Widget build(BuildContext context) => Container(
-        padding: const EdgeInsets.all(8),
-        color: Colors.green,
-        child: Text(title),
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.all(AppDimens.paddingExtraSmall),
+        child: Container(
+          color: Colors.green,
+          child: Center(child: Text(title)),
+        ),
       );
 }

@@ -19,7 +19,6 @@ extension Dialogs on BuildContext {
               ),
               Text(
                 alertTitle,
-         
                 style: const TextStyle(fontSize: 20),
               ),
             ],
